@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<Deterministic>false</Deterministic>
+		<PackageId>VladDudkin.PowerCollections</PackageId>
+		<Version>0.0.1-beta</Version>
+		<RepositoryUrl>https://github.com/VSynV/DevTools_lab02.git</RepositoryUrl>
+	</PropertyGroup>
+
+</Project>
