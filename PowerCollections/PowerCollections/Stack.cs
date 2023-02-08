@@ -11,7 +11,7 @@ namespace Wintellect.PowerCollections
 
         T[] array;
 
-        public Stack(int size = 1)
+        public Stack(int size = 100)
         {
             if (size < 0)
                 throw new InvalidOperationException("Размер стека не может быть отрицателен");
