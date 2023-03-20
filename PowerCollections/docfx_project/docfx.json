@@ -4,16 +4,18 @@
       "src": [
         {
           "files": [
-            "PowerCollections/**.csproj"
+            "PowerCollections/.csproj"
+          ],
+          "src": "..",
+          "exclude": [
+            "/bin/",
+            "/obj/**"
           ]
         }
       ],
       "dest": "api",
-      "includePrivateMembers": false,
       "disableGitFeatures": false,
-      "disableDefaultFilter": false,
-      "noRestore": false,
-      "namespaceLayout": "flattened"
+      "disableDefaultFilter": false
     }
   ],
   "build": {

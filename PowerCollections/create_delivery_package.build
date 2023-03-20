@@ -1,4 +1,4 @@
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003%22%3E
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 <PropertyGroup>
     <ignore>true</ignore>
     <src>true</src>
@@ -19,7 +19,7 @@
 
     <ItemGroup>
         <Product Include="PowerCollections\bin\Release\VladDudkin.PowerCollections.$(Major).$(Minor).$(Build).nupkg" />
-        <Docs Include="docfx_project\_site**." />
+        <Docs Include="docfx_project\_site\**\*.*" />
         <src Include="PowerCollections*"
             Exclude="PowerCollections\bin*;PowerCollections\obj*;PowerCollections.vs*"
             Condition="$(src) == 'true'" />
@@ -29,9 +29,9 @@
         <PackDirectory>VladDudkin.PowerCollections($([System.DateTime]::Now.ToString(yyyy/MM/dd)))$(Major).$(Minor).$(Build)</PackDirectory>
     </PropertyGroup>
 
-    <Copy SourceFiles="@(Product)" DestinationFolder="$(PackDirectory)\bin%(RecursiveDir)" />
-    <Copy SourceFiles="@(Docs)" DestinationFolder="$(PackDirectory)\_site%(RecursiveDir)" />
-    <Copy SourceFiles="@(src)" DestinationFolder="$(PackDirectory)\src%(RecursiveDir)" Condition="$(src) == 'true'" />
+    <Copy SourceFiles="@(Product)" DestinationFolder="$(PackDirectory)\bin\%(RecursiveDir)" />
+    <Copy SourceFiles="@(Docs)" DestinationFolder="$(PackDirectory)\_site\%(RecursiveDir)" />
+    <Copy SourceFiles="@(src)" DestinationFolder="$(PackDirectory)\src\%(RecursiveDir)" Condition="$(src) == 'true'" />
 
     <ZipDirectory SourceDirectory="$(PackDirectory)" Overwrite="true" DestinationFile="$(MSBuildProjectDirectory)$(PackDirectory).zip" />
 	<RemoveDir Directories="$(PackDirectory)" />
