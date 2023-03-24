@@ -5,7 +5,7 @@
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 		<Deterministic>false</Deterministic>
 		<PackageId>VladDudkin.PowerCollections</PackageId>
-		<Version>0.0.2-beta</Version>
+		<Version>0.0.3-beta</Version>
 		<RepositoryUrl>https://github.com/VSynV/DevTools_lab02.git</RepositoryUrl>
 	</PropertyGroup>
 
