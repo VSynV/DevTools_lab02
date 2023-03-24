@@ -51,7 +51,7 @@ namespace Wintellect.PowerCollections
             for(int max = Count - 1; max >= 0; max--)
             {
                 yield return array[max];
-            }
+            
         } 
 
         System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
