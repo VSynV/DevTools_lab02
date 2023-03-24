@@ -61,7 +61,7 @@ namespace Wintellect.PowerCollections.Tests
         public void Constructor_WithOut_Parameter() // работа конструктора без параметров
         {
             Stack<int> a = new Stack<int>();
-            Assert.AreEqual(1, a.Capacity);
+            Assert.AreEqual(100, a.Capacity);      
         }
 
         [TestMethod]
